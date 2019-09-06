@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Selamat datang Pamong Desa
+                    Selamat datang Pamong Desa Taufik
                 </div>
 
                 <div class="links">
