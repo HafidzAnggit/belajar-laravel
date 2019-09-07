@@ -36,6 +36,7 @@ Route::get('/pegawai/create', 'PegawaiController@create'); //url, controller Dos
 Route::post('/pegawai/store', 'PegawaiController@store'); //url, controller Pegawai || proses penambahan
 Route::get('/pegawai/edit/{id}', 'PegawaiController@edit'); //mengirimkan data id yang ingin di edit ke controller
 Route::post('/pegawai/update', 'PegawaiController@update');
+Route::get('/pegawai/delete/{id}', 'PegawaiController@delete');
 
 // Route::get('/formulir', 'PegawaiController@formulir');
 // Route::post('/formulir/proses', 'PegawaiController@proses');
