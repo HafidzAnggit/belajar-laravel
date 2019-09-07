@@ -31,7 +31,12 @@ Route::get('/blog/kontak', 'BlogController@kontak');
 
 
 //route CRUD
-Route::get('/pegawai', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
+Route::get('/pegawai', 'PegawaiController@index'); //url, controller Dosen || menampilkan user yang ada
+Route::get('/pegawai/create', 'PegawaiController@create'); //url, controller Dosen || membuat user baru
+Route::post('/pegawai/store', 'PegawaiController@store'); //url, controller Pegawai || proses penambahan
+Route::get('/pegawai/edit/{id}', 'PegawaiController@edit'); //mengirimkan data id yang ingin di edit ke controller
+Route::post('/pegawai/update', 'PegawaiController@update');
+
 // Route::get('/formulir', 'PegawaiController@formulir');
 // Route::post('/formulir/proses', 'PegawaiController@proses');
 

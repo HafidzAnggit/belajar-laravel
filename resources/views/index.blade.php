@@ -6,8 +6,7 @@
 <body>
 
 	<h1>Data Pegawai</h1>
-
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/pegawai/create"> + Tambah Pegawai Baru</a>
 	
 	<br/>
 	<br/>
@@ -27,14 +26,14 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
+                <!-- mengalihkan halaman ke route sambil mengirimkan data id data yang ingin di edit. -->
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a> 
 				|
 				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
-
 
 </body>
 </html>
