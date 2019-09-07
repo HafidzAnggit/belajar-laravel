@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('halo', function () {
+Route::get('halo', function () { //membuat return string dalam route langsung
 	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
 });
 
-Route::get('blog', function () {
+Route::get('blog', function () { //url, view(blog)
 	return view('blog');
 });
+
+Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
