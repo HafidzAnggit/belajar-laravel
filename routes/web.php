@@ -11,19 +11,24 @@
 |
 */
 
+//route default laravel
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('halo', function () { //membuat return string dalam route langsung
-	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
-});
 
-Route::get('blog', function () { //url, view(blog)
-	return view('blog');
-});
+//route blog pert8
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
 
-Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
-Route::get('/pegawai/{nama}', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
-Route::get('/formulir', 'PegawaiController@formulir');
-Route::post('/formulir/proses', 'PegawaiController@proses');
+
+//route gado - gado 1 - 7 malasngoding.com
+// Route::get('halo', function () { //membuat return string dalam route langsung
+// 	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
+// });
+// Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
+// Route::get('/pegawai/{nama}', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
+// Route::get('/formulir', 'PegawaiController@formulir');
+// Route::post('/formulir/proses', 'PegawaiController@proses');
+
