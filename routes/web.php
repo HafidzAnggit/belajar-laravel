@@ -28,7 +28,10 @@ Route::get('/blog/kontak', 'BlogController@kontak');
 // 	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
 // });
 // Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
-// Route::get('/pegawai/{nama}', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
+
+
+//route CRUD
+Route::get('/pegawai', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
 // Route::get('/formulir', 'PegawaiController@formulir');
 // Route::post('/formulir/proses', 'PegawaiController@proses');
 
