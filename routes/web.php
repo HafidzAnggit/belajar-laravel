@@ -24,3 +24,6 @@ Route::get('blog', function () { //url, view(blog)
 });
 
 Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
+Route::get('/pegawai/{nama}', 'PegawaiController@index'); //url, controller Dosen ||memanggil return string dalam controller
+Route::get('/formulir', 'PegawaiController@formulir');
+Route::post('/formulir/proses', 'PegawaiController@proses');
