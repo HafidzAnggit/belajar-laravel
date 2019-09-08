@@ -58,7 +58,7 @@ class PegawaiController extends Controller
     }
 
     // method untuk hapus data pegawai
-    public function hapus($id)
+    public function delete($id)
     {
         // menghapus data pegawai berdasarkan id yang dipilih
         DB::table('pegawai')->where('pegawai_id',$id)->delete();

@@ -1,3 +1,3 @@
 # belajar-laravel
 
-Project ini aku buat dengan sangat ikhlas tanpa ada paksaan
+Project ini dibuat awal dari pembelajaran saya mengenal web programming menggunakan framework laravel v6.0
