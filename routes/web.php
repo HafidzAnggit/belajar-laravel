@@ -13,7 +13,7 @@
 
 //route default laravel
 Route::get('/', function () {
-    return view('welcome');
+    return view('master');
 });
 
 
