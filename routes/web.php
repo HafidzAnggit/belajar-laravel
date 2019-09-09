@@ -27,7 +27,7 @@ Route::get('/blog/kontak', 'BlogController@kontak');
 // Route::get('halo', function () { //membuat return string dalam route langsung
 // 	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
 // });
-Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
+// Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
 
 
 //route CRUD
@@ -37,7 +37,8 @@ Route::post('/pegawai/store', 'PegawaiController@store'); //url, controller Pega
 Route::get('/pegawai/edit/{id}', 'PegawaiController@edit'); //mengirimkan data id yang ingin di edit ke controller
 Route::post('/pegawai/update', 'PegawaiController@update');
 Route::get('/pegawai/delete/{id}', 'PegawaiController@delete');
-
+Route::get('/input', 'ProcessingController@input');
+Route::post('/process', 'ProcessingController@process');
 // Route::get('/formulir', 'PegawaiController@formulir');
 // Route::post('/formulir/proses', 'PegawaiController@proses');
 

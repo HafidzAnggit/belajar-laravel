@@ -1,5 +1,7 @@
 @extends('master')
 
+@section ('project_title', "{{ env('APP_NAME') }}")
+
 @section('content')
     <section class="content-header">
       <h1>
@@ -54,27 +56,19 @@
                         <a class="glyphicon glyphicon-trash btn btn-danger" href="/pegawai/delete/{{ $p->pegawai_id }}"></a>
                     </td>
                 </tr>
-                
                 @endforeach
                 </tbody>
                 <tfoot>                
                 </tfoot>
               </table>
-            </div>
+            
             <!-- /.box-body -->
+          </div>    
           </div>
+          </section>
+
 <!-- page script -->
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
-@endsection
+
+ @endsection
+
+          
