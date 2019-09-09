@@ -27,7 +27,7 @@ Route::get('/blog/kontak', 'BlogController@kontak');
 // Route::get('halo', function () { //membuat return string dalam route langsung
 // 	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
 // });
-// Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
+Route::get('dosen', 'DosenController@index'); //url, controller Dosen ||memanggil return string dalam controller
 
 
 //route CRUD
