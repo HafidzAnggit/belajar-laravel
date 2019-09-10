@@ -1,7 +1,5 @@
 @extends('master')
 
-@section ('project_title', "{{ env('APP_NAME') }})
-
 @section('content')
 <!-- Content Header (Page header) -->
     <section class="content-header">
