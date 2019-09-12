@@ -39,6 +39,7 @@ Route::post('/pegawai/update', 'PegawaiController@update');
 Route::get('/pegawai/delete/{id}', 'PegawaiController@delete');
 Route::get('/input', 'ProcessingController@input');
 Route::post('/process', 'ProcessingController@process');
+Route::any('profile', 'ProfileController@index');
 // Route::get('/formulir', 'PegawaiController@formulir');
 // Route::post('/formulir/proses', 'PegawaiController@proses');
 

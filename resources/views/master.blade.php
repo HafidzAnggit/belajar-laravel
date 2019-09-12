@@ -148,9 +148,8 @@
               <li class="user-header">
                 <img src="/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                <p>
-                  Hafizh Anggit Barnawa - Web Developer
-                  <small>Member since Nov. 2012</small>
+                <p>Hafizh Anggit Barnawa - Network Engineering
+                  <small>Member since Sep. 2019</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -171,7 +170,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="/profile" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href="#" class="btn btn-default btn-flat">Sign out</a>
