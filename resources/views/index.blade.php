@@ -33,9 +33,9 @@
                 <tr>
                   <th>#</th>
                   <th>Nama Lengkap</th>
-                  <th>Jabatan</th>
-                  <th>Umur</th>
-                  <th>Alamat</th>
+                  {{-- <th>Jabatan</th>
+                  <th>Umur</th> --}}
+                  <th>Alamat</th> 
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -44,15 +44,15 @@
                 @foreach($pegawai as $p)
                 <tr>
                     <td>{{ $number++ }}</td>
-                    <td>{{ $p->pegawai_nama }}</td>
-                    <td>{{ $p->pegawai_jabatan }}</td>
-                    <td>{{ $p->pegawai_umur }}</td>
-                    <td>{{ $p->pegawai_alamat }}</td>
+                    <td>{{ $p->nama }}</td>
+                    {{-- <td>{{ $p->pegawai_jabatan }}</td>
+                    <td>{{ $p->pegawai_umur }}</td> --}}
+                    <td>{{ $p->alamat }}</td>
                     <td>
                         <!-- mengalihkan halaman ke route sambil mengirimkan data id data yang ingin di edit. -->
-                        <a class="glyphicon glyphicon-edit btn btn-info" href="/pegawai/edit/{{ $p->pegawai_id }}"></a>
+                        <a class="glyphicon glyphicon-edit btn btn-info" href="/pegawai/edit/{{ $p->id }}"></a>
                         |
-                        <a class="glyphicon glyphicon-trash btn btn-danger" href="/pegawai/delete/{{ $p->pegawai_id }}"></a>
+                        <a class="glyphicon glyphicon-trash btn btn-danger" href="/pegawai/delete/{{ $p->id }}"></a>
                     </td>
                 </tr>
                 @endforeach

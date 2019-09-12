@@ -77,7 +77,7 @@ CREATE TABLE `password_resets` (
 --
 
 CREATE TABLE `pegawai` (
-  `pegawai_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `pegawai_nama` varchar(50) NOT NULL,
   `pegawai_jabatan` varchar(20) NOT NULL,
   `pegawai_umur` int(11) NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE `pegawai` (
 -- Dumping data untuk tabel `pegawai`
 --
 
-INSERT INTO `pegawai` (`pegawai_id`, `pegawai_nama`, `pegawai_jabatan`, `pegawai_umur`, `pegawai_alamat`) VALUES
+INSERT INTO `pegawai` (`id`, `pegawai_nama`, `pegawai_jabatan`, `pegawai_umur`, `pegawai_alamat`) VALUES
 (1, 'Ella Endah Nasyiah S.I.Kom', 'nihil', 37, 'Gg. Gedebage Selatan No. 255, Padangsidempuan 15610, Maluku'),
 (2, 'Olivia Zahra Wijayanti', 'iste', 26, 'Jln. Basket No. 815, Kotamobagu 42455, KalUt'),
 (3, 'Hafshah Elvina Yolanda', 'quia', 29, 'Gg. Bak Mandi No. 64, Pontianak 67003, DIY'),
@@ -183,7 +183,7 @@ ALTER TABLE `password_resets`
 -- Indeks untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
-  ADD PRIMARY KEY (`pegawai_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `users`
@@ -212,7 +212,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
-  MODIFY `pegawai_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
