@@ -45,8 +45,8 @@
                 <tr>
                     <td>{{ $number++ }}</td>
                     <td>{{ $p->nama }}</td>
-                    {{-- <td>{{ $p->pegawai_jabatan }}</td>
-                    <td>{{ $p->pegawai_umur }}</td> --}}
+                    {{-- <td>{{ $p->jabatan }}</td>
+                    <td>{{ $p->umur }}</td> --}}
                     <td>{{ $p->alamat }}</td>
                     <td>
                         <!-- mengalihkan halaman ke route sambil mengirimkan data id data yang ingin di edit. -->
