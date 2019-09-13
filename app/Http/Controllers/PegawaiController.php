@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\DB; //query builder
+
+//memanggil model pegawai
+use App\Pegawai;
+
 class PegawaiController extends Controller
 {
     public function index(){
-         // mengambil data dari table pegawai
-    	$pegawai = DB::table('pegawai')->get();
+         // mengambil data dari table pegawai menggunakan Query builder
+        // $pegawai = DB::table('pegawai')->get(); 
+        
+        // mengambil data pegawai menggunakan eloquent
+        $pegawai = Pegawai::all();
  
-    	// mengirim data pegawai ke view index
+    	// mengirim(passing) data pegawai ke view index
     	return view('index',['pegawai' => $pegawai]);
     }
 

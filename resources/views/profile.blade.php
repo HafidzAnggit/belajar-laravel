@@ -93,7 +93,7 @@
                 <div class="nav-tabs-custom">
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-                    <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+                    <li><a href="#timeline" data-toggle="tab">Workshop & Certification</a></li>
                     <li><a href="#settings" data-toggle="tab">Settings</a></li>
                   </ul>
                   <div class="tab-content">
@@ -218,7 +218,7 @@
                         <!-- timeline time label -->
                         <li class="time-label">
                               <span class="bg-red">
-                                10 Feb. 2014
+                                16 Des. 2016
                               </span>
                         </li>
                         <!-- /.timeline-label -->
@@ -229,7 +229,7 @@
                           <div class="timeline-item">
                             <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
       
-                            <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+                            <h3 class="timeline-header"><a href="#">Web Design & Development</a> <small>at Ahmad Dahlan University</small> </h3>
       
                             <div class="timeline-body">
                               Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
@@ -242,6 +242,58 @@
                               <a class="btn btn-danger btn-xs">Delete</a>
                             </div>
                           </div>
+                          <li class="time-label">
+                                <span class="bg-green">
+                                  05 May Des. 2018
+                                </span>
+                          </li>
+                          <!-- /.timeline-label -->
+                          <!-- timeline item -->
+                          <li>
+                            <i class="fa fa-envelope bg-blue"></i>
+        
+                            <div class="timeline-item">
+                              <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+        
+                              <h3 class="timeline-header"><a href="#">Cyber Crime & Digital Forensic</a> <small>at UAJY</small> </h3>
+        
+                              <div class="timeline-body">
+                                Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                                weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                                jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                                quora plaxo ideeli hulu weebly balihoo...
+                              </div>
+                              <div class="timeline-footer">
+                                <a class="btn btn-primary btn-xs">Read more</a>
+                                <a class="btn btn-danger btn-xs">Delete</a>
+                              </div>
+                            </div>
+                            <li class="time-label">
+                                    <span class="bg-green">
+                                      07 April. 2019
+                                    </span>
+                              </li>
+                              <!-- /.timeline-label -->
+                              <!-- timeline item -->
+                              <li>
+                                <i class="fa fa-envelope bg-blue"></i>
+            
+                                <div class="timeline-item">
+                                  <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+            
+                                  <h3 class="timeline-header"><a href="http://idn.id">MikroTik Certified Network Assosiate (MTCNA)</a> <small>at ID-Networkers</small> </h3>
+            
+                                  <div class="timeline-body">
+                                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                                    weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                                    jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                                    quora plaxo ideeli hulu weebly balihoo...
+                                  </div>
+                                  <div class="timeline-footer">
+                                    <a class="btn btn-primary btn-xs">Read more</a>
+                                    <a class="btn btn-danger btn-xs">Delete</a>
+                                  </div>
+                                </div>
                         </li>
                         <!-- END timeline item -->
                         <!-- timeline item -->
