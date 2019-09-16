@@ -16,6 +16,7 @@ class PegawaiController extends Controller
         
         // mengambil data pegawai menggunakan eloquent
         $pegawai = Pegawai::all();
+        // $pegawai = Pegawai::first(); //memanggil 1 data pegawai yang ke-1
  
     	// mengirim(passing) data pegawai ke view index
     	return view('index',['pegawai' => $pegawai]);

@@ -40,19 +40,18 @@
                 </tr>
                 </thead>
                 <tbody>
+                {{-- ketika ingin menampilkan 1 data view, langsung menggunakan variable $pegawai->alamat --}}
                 <?php $number=1; ?>
                 @foreach($pegawai as $p)
                 <tr>
                     <td>{{ $number++ }}</td>
                     <td>{{ $p->nama }}</td>
-                    {{-- <td>{{ $p->jabatan }}</td>
-                    <td>{{ $p->umur }}</td> --}}
                     <td>{{ $p->alamat }}</td>
                     <td>
                         <!-- mengalihkan halaman ke route sambil mengirimkan data id data yang ingin di edit. -->
-                        <a class="glyphicon glyphicon-edit btn btn-info" href="/pegawai/edit/{{ $p->id }}"></a>
+                        <a href="/pegawai/edit/{{ $p->id }}" class="glyphicon glyphicon-edit btn btn-info"></a>
                         |
-                        <a class="glyphicon glyphicon-trash btn btn-danger" href="/pegawai/delete/{{ $p->id }}"></a>
+                        <a href="/pegawai/delete/{{ $p->id }}" class="glyphicon glyphicon-trash btn btn-danger"></a>
                     </td>
                 </tr>
                 @endforeach

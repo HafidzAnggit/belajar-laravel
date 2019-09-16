@@ -1,0 +1,228 @@
+wlan2 = seamless
+ether1 = indihome
+local = 10.10.10.0/24
+
+
+/ip firewall address-list
+add address=0.0.0.0/8 list=private-lokal
+add address=10.0.0.0/8 list=private-lokal
+add address=100.64.0.0/10 list=private-lokal
+add address=127.0.0.0/8 list=private-lokal
+add address=169.254.0.0/16 list=private-lokal
+add address=172.16.0.0/12 list=private-lokal
+add address=192.0.0.0/24 list=private-lokal
+add address=192.0.2.0/24 list=private-lokal
+add address=192.168.0.0/16 list=private-lokal
+add address=198.18.0.0/15 list=private-lokal
+add address=198.51.100.0/24 list=private-lokal
+add address=203.0.113.0/24 list=private-lokal
+add address=224.0.0.0/3 list=private-lokal
+add address=118.98.0.0/17 list=ggc-telkom
+add address=118.97.0.0/16 list=ggc-telkom
+add address=31.13.24.0/21 comment="Facebook Ireland" list=sosmed
+add address=31.13.64.0/18 comment="Facebook Ireland" list=sosmed
+add address=31.13.64.0/19 comment="Facebook Ireland" list=sosmed
+add address=31.13.64.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.65.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.66.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.67.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.68.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.69.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.70.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.71.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.72.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.73.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.74.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.75.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.76.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.78.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.80.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.81.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.82.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.83.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.84.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.85.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.86.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.87.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.90.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.91.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.92.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.94.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.95.0/24 comment="Facebook Ireland" list=sosmed
+add address=31.13.96.0/19 comment="Facebook Ireland" list=sosmed
+add address=45.64.40.0/22 comment="Facebook Singapore Pte Ltd. Singapore" list=sosmed
+add address=66.220.144.0/20 comment="Facebook, Inc. United States" list=sosmed
+add address=66.220.144.0/21 comment="Facebook, Inc. United States" list=sosmed
+add address=66.220.152.0/21 comment="Facebook, Inc. United States" list=sosmed
+add address=69.63.176.0/20 comment="Facebook, Inc. United States" list=sosmed
+add address=69.63.176.0/21 comment="Facebook, Inc. United States" list=sosmed
+add address=69.63.184.0/21 comment="Facebook, Inc. United States" list=sosmed
+add address=69.171.224.0/19 comment="Facebook, Inc. United States" list=sosmed
+add address=69.171.224.0/20 comment="Facebook, Inc. United States" list=sosmed
+add address=69.171.239.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=69.171.240.0/20 comment="Facebook, Inc. United States" list=sosmed
+add address=69.171.255.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=74.119.76.0/22 comment="Facebook, Inc. United States" list=sosmed
+add address=103.4.96.0/22 comment=" Temasek Avenue Singapore" list=sosmed
+add address=157.240.0.0/17 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.1.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.2.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.3.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.6.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.7.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.8.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.9.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.10.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.11.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.12.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.13.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.14.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.15.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.16.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.18.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.20.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.21.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=157.240.22.0/24 comment="Facebook, Inc. United States" list=sosmed
+add address=173.252.64.0/19 comment="Facebook, Inc. United States" list=sosmed
+add address=173.252.88.0/21 comment="Facebook, Inc. United States" list=sosmed
+add address=173.252.96.0/19 comment="Facebook, Inc. United States" list=sosmed
+add address=179.60.192.0/22 comment="Edge Network Services Ltd United States" list=sosmed
+add address=179.60.192.0/24 comment="Edge Network Services Ltd United States" list=sosmed
+add address=179.60.193.0/24 comment="Edge Network Services Ltd United States" list=sosmed
+add address=179.60.195.0/24 comment="Edge Network Services Ltd United States" list=sosmed
+add address=185.60.216.0/22 comment="Facebook Ireland" list=sosmed
+add address=185.60.216.0/24 comment="Facebook Ireland" list=sosmed
+add address=185.60.218.0/24 comment="Facebook Ireland" list=sosmed
+add address=185.60.219.0/24 comment="Facebook Ireland" list=sosmed
+add address=204.15.20.0/22 comment="Facebook, Inc. United States" list=sosmed
+add address=64.63.0.0/18 comment="MoPub, Inc. United States" list=sosmed
+add address=69.195.160.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.162.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.163.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.164.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.165.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.166.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.168.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.169.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.171.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.172.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.173.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.175.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.176.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.177.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.178.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.179.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.180.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.181.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.182.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.184.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.185.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.186.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.187.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.188.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.189.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.190.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=69.195.191.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=103.252.112.0/23 comment="60 Robinson Road, #11-02 BEA Building, Singapore 068892. Singapore" list=sosmed
+add address=103.252.114.0/23 comment="60 Robinson Road, #11-02 BEA Building, Singapore 068892. Singapore" list=sosmed
+add address=104.244.40.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.41.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.42.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.43.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.44.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.45.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.46.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=104.244.47.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=185.45.5.0/24 comment="Twitter International Company Ireland" list=sosmed
+add address=185.45.6.0/23 comment="Twitter International Company Ireland" list=sosmed
+add address=188.64.224.0/24 comment="Heron SAS France" list=sosmed
+add address=188.64.225.0/24 comment="Heron SAS France" list=sosmed
+add address=188.64.226.0/23 comment="Heron SAS France" list=sosmed
+add address=188.64.226.0/24 comment="Heron SAS France" list=sosmed
+add address=188.64.227.0/24 comment="Heron SAS France" list=sosmed
+add address=188.64.228.0/24 comment="Heron SAS France" list=sosmed
+add address=188.64.229.0/24 comment="Heron SAS France" list=sosmed
+add address=192.44.69.0/24 comment="Crashlytics, Inc United States" list=sosmed
+add address=192.133.76.0/22 comment="Twitter Inc. United States" list=sosmed
+add address=192.133.76.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=199.16.156.0/22 comment="Twitter Inc. United States" list=sosmed
+add address=199.16.156.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=199.59.148.0/22 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.56.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.56.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.57.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.58.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.60.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.60.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.61.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=199.96.62.0/23 comment="Twitter Inc. United States" list=sosmed
+add address=202.160.128.0/24 comment="Twitter Asia Pacific Pte. Ltd. Singapore" list=sosmed
+add address=202.160.129.0/24 comment="Twitter Asia Pacific Pte. Ltd. Singapore" list=sosmed
+add address=202.160.130.0/24 comment="Twitter Asia Pacific Pte. Ltd. Singapore" list=sosmed
+add address=202.160.131.0/24 comment="Twitter Asia Pacific Pte. Ltd. Singapore" list=sosmed
+add address=209.237.192.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.193.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.194.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.195.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.196.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.197.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.198.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.199.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.200.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.201.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.204.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.205.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.206.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.207.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.208.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.209.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.210.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.211.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.212.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.213.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.214.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.215.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.216.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.217.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.218.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.219.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.220.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.221.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.222.0/24 comment="Twitter Inc. United States" list=sosmed
+add address=209.237.223.0/24 comment="Twitter Inc. United States" list=sosmed
+
+/ip firewall mangle
+add action=mark-connection chain=prerouting comment="port umum" dst-port=21,22,23,81,88,5050,843,182,8777,1935,53,8000-8081,443,80 in-interface=!ether1 \
+    new-connection-mark="PORT UMUM" passthrough=yes protocol=tcp
+add action=mark-connection chain=prerouting dst-port=67,5228,35915,39397,110,5060,6666,3478,66,53 in-interface=!ether1 new-connection-mark="PORT UMUM" passthrough=yes \
+    protocol=tcp
+add action=mark-connection chain=prerouting connection-state="" dst-port=67,5228,35915,39397,110,5060,6666,3478,66,53 in-interface=!ether1 new-connection-mark="PORT UMUM" \
+    passthrough=yes protocol=udp
+add action=mark-connection chain=prerouting dst-port=21,22,23,81,88,5050,843,182,8777,1935,53,8000-8081,443,80 in-interface=!ether1 new-connection-mark="PORT UMUM" \
+    passthrough=yes protocol=udp
+add action=add-dst-to-address-list address-list="IP GAME ONLINE" address-list-timeout=1s chain=prerouting comment="port selain umum ringan(game)" connection-mark=\
+    "!PORT UMUM" dst-address-list=!private-lokal in-interface=!ether1 protocol=tcp
+add action=add-dst-to-address-list address-list="IP GAME ONLINE" address-list-timeout=1s chain=prerouting connection-mark="!PORT UMUM" dst-address-list=!private-lokal \
+    in-interface=!ether1 protocol=udp
+add action=mark-connection chain=prerouting dst-address-list="IP GAME ONLINE" in-interface=!ether1 new-connection-mark="PORT SELAIN PORT UMUM ( GAME )" passthrough=yes
+add action=mark-packet chain=forward connection-mark="PORT SELAIN PORT UMUM ( GAME )" in-interface=ether1 new-packet-mark="PORT SELAIN PORT UMUM(GAME) DOWN" passthrough=\
+    yes
+add action=mark-packet chain=forward connection-mark="PORT SELAIN PORT UMUM ( GAME )" new-packet-mark="PORT SELAIN PORT UMUM(GAME) UPLUAD" out-interface=ether1 \
+    passthrough=yes
+add action=mark-connection chain=forward comment="Mangle untuk bypass ICMP" dst-address=10.10.10.0/24 new-connection-mark=conn-bypass-icmp passthrough=yes protocol=!icmp
+add action=mark-connection chain=forward new-connection-mark=conn-bypass-icmp passthrough=yes protocol=!icmp src-address=10.10.10.0/24
+add action=mark-packet chain=forward connection-mark=conn-bypass-icmp new-packet-mark=packet-bypass-icmp passthrough=no
+add action=add-dst-to-address-list address-list="IP BUKAN PORT UMUM" address-list-timeout=1s chain=prerouting comment="selain umum(berat) to seamless" connection-mark=\
+    "!PORT UMUM" connection-rate=512k-100M dst-address-list=!private-lokal in-interface=!ether1
+add action=mark-connection chain=prerouting dst-address-list="IP BUKAN PORT UMUM" in-interface=!ether1 new-connection-mark=Youtube&Sosmed passthrough=yes
+add action=mark-connection chain=prerouting comment="Youtube & Sosmed to Seamless" dst-address-list=ggc-telkom in-interface=!ether1 new-connection-mark=Youtube&Sosmed \
+    passthrough=yes
+add action=mark-connection chain=prerouting dst-address-list=sosmed in-interface=!ether1 new-connection-mark=Youtube&Sosmed passthrough=yes
+add action=mark-routing chain=prerouting connection-mark=Youtube&Sosmed in-interface=!ether1 new-routing-mark=TUBESOS passthrough=yes src-address=10.10.10.0/24
+add action=mark-routing chain=prerouting comment="Youtube & Sosmed to Indihome" connection-mark=Youtube&Sosmed in-interface=ether1 new-routing-mark=TUBESOS passthrough=\
+    yes src-address=10.10.10.0/24
+
+/ip route
+add check-gateway=ping distance=2 gateway=10.211.192.1 routing-mark=TUBESOS
+add check-gateway=ping distance=1 gateway=192.168.1.1
+
